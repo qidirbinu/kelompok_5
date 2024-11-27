@@ -43,8 +43,8 @@ if tfidf_vectorizer is None:
     st.stop()
 
 # Input untuk memasukkan tweet
-tweet = st.text_area("Masukkan tweet yang akan diuji:", "")
-
+tweet = st.text_area("Masukkan tweet yang akan diuji (tekan ctrl+enter untuk mereset kembali sebelum tekan tombol prediksi):", "")
+st.text_area("tekan ctrl+enter untuk mereset kembali sebelum tekan tombol prediksi")
 # Prediksi ketika tombol ditekan
 if st.button("Prediksi"):
     if tweet.strip() == "":
